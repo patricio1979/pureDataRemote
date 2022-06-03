@@ -1,0 +1,8 @@
+#N canvas 61 23 450 300 12;
+#X obj 102 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X msg 102 130 disconnect;
+#X obj 102 154 send sendNet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X coords 0 -1 1 1 20 20 2 100 100;

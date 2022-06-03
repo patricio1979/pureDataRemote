@@ -1,0 +1,26 @@
+#N canvas 80 293 450 300 12;
+#X obj 70 163 netreceive -u -b;
+#X msg 70 140 listen \$1;
+#X obj 70 187 oscparse;
+#X obj 70 211 list trim;
+#X obj 70 234 print recibo;
+#X obj 70 116 fudiparse;
+#X obj 70 93 list fromsymbol;
+#X text 189 163 recibe mensajes desde internet;
+#X obj 161 233 send recibo;
+#X obj 50 50 cnv 15 150 30 empty empty empty 20 12 0 14 -260097 -66577
+0;
+#X symbolatom 70 56 15 0 0 0 - - -;
+#X obj 231 23 loadbang;
+#X msg 231 59 set puertoEntrada;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 8 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 10 0 6 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X coords 0 -1 1 1 150 30 2 50 50;

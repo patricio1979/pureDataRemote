@@ -1,0 +1,10 @@
+#N canvas 101 23 450 300 12;
+#X obj 52 202 tgl 35 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 52 143 netsend -u -b;
+#X obj 52 117 receive sendNet;
+#X floatatom 52 168 0 0 0 1 Está_conectado? - -;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X coords 0 -1 1 1 40 40 2 50 200;
